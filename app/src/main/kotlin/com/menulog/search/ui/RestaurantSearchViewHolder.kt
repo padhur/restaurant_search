@@ -1,9 +1,9 @@
-package com.burakeregar.githubsearch.home.viewholder
+package com.menulog.search.ui
 
 import android.view.View
 import com.bumptech.glide.Glide
 import com.burakeregar.easiestgenericrecycleradapter.base.GenericViewHolder
-import com.burakeregar.githubsearch.home.model.RestaurantsItem
+import com.menulog.search.model.RestaurantsItem
 import kotlinx.android.synthetic.main.restaurant_item.view.*
 import org.greenrobot.eventbus.EventBus
 

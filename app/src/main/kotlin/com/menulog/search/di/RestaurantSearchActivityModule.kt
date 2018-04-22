@@ -1,9 +1,9 @@
-package com.burakeregar.githubsearch.home.di
+package com.menulog.search.di
 
 import com.base.di.ActivityScope
 import com.base.util.AppSchedulerProvider
-import com.burakeregar.githubsearch.api.Endpoints
-import com.burakeregar.githubsearch.home.presenter.RestaurantSearchPresenter
+import com.menulog.search.api.Endpoints
+import com.menulog.search.presenter.RestaurantSearchPresenter
 import dagger.Module
 import dagger.Provides
 import io.reactivex.disposables.CompositeDisposable

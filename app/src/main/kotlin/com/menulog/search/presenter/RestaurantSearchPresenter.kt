@@ -1,9 +1,9 @@
-package com.burakeregar.githubsearch.home.presenter
+package com.menulog.search.presenter
 
 import com.base.mvp.BasePresenter
 import com.base.util.SchedulerProvider
-import com.burakeregar.githubsearch.api.Endpoints
 import io.reactivex.disposables.CompositeDisposable
+import com.menulog.search.api.Endpoints
 import javax.inject.Inject
 
 class RestaurantSearchPresenter @Inject constructor(var api: Endpoints, disposable:

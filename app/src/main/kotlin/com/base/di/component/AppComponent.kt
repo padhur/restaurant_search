@@ -8,9 +8,8 @@ import com.base.di.module.AppModule
 import com.base.di.module.OkHttpModule
 import com.base.di.module.RetrofitModule
 import com.base.util.AppSchedulerProvider
-import com.burakeregar.githubsearch.api.Endpoints
-import com.burakeregar.githubsearch.home.RestaurantSearchActivity
 import com.google.gson.Gson
+import com.menulog.search.api.Endpoints
 import dagger.Component
 import io.reactivex.disposables.CompositeDisposable
 import okhttp3.Cache

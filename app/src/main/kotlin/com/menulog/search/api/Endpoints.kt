@@ -1,6 +1,6 @@
-package com.burakeregar.githubsearch.api
+package com.menulog.search.api
 
-import com.burakeregar.githubsearch.home.model.RestaurantList
+import com.menulog.search.model.RestaurantList
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Query

@@ -1,12 +1,11 @@
 package com.base
 
 import android.os.Bundle
-import android.support.annotation.VisibleForTesting
 import android.support.v7.app.AppCompatActivity
 import com.base.di.component.AppComponent
 import com.base.mvp.BaseView
 import com.base.mvp.BasePresenter
-import com.burakeregar.githubsearch.R
+import com.menulog.search.R
 import org.greenrobot.eventbus.EventBus
 import org.jetbrains.anko.toast
 

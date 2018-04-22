@@ -1,8 +1,8 @@
-package com.burakeregar.githubsearch.home.di
+package com.menulog.search.di
 
 import com.base.di.ActivityScope
 import com.base.di.component.AppComponent
-import com.burakeregar.githubsearch.home.RestaurantSearchActivity
+import com.menulog.search.ui.RestaurantSearchActivity
 
 import dagger.Component
 

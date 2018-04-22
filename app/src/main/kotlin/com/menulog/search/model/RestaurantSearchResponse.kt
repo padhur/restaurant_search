@@ -1,4 +1,4 @@
-package com.burakeregar.githubsearch.home.model
+package com.menulog.search.model
 
 
 import com.google.gson.annotations.SerializedName

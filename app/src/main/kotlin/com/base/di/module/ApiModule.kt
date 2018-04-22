@@ -1,6 +1,6 @@
 package com.base.di.module
 
-import com.burakeregar.githubsearch.api.Endpoints
+import com.menulog.search.api.Endpoints
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

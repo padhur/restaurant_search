@@ -4,8 +4,8 @@ import android.app.Application
 import com.base.di.component.AppComponent
 import com.base.di.component.DaggerAppComponent
 import com.base.di.module.AppModule
-import com.burakeregar.githubsearch.BuildConfig
 import com.facebook.stetho.Stetho
+import com.menulog.search.BuildConfig
 
 class RestaurantSearchApp : Application() {
 

@@ -1,6 +1,6 @@
 package com.base.di.module
 
-import com.burakeregar.githubsearch.BuildConfig
+import com.menulog.search.BuildConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

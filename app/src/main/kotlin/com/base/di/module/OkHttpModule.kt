@@ -1,9 +1,9 @@
 package com.base.di.module
 
 import android.app.Application
-import com.burakeregar.githubsearch.BuildConfig
 import dagger.Module
 import com.facebook.stetho.okhttp3.StethoInterceptor
+import com.menulog.search.BuildConfig
 import dagger.Provides
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,7 +1,7 @@
-package com.burakeregar.githubsearch.home.presenter
+package com.menulog.search.presenter
 
 import com.base.mvp.BaseView
-import com.burakeregar.githubsearch.home.model.RestaurantsItem
+import com.menulog.search.model.RestaurantsItem
 
 interface RestaurantSearchView : BaseView {
     fun onSearchResponse(list: List<RestaurantsItem>?)

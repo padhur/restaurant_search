@@ -1,8 +1,10 @@
-package com.burakeregar.githubsearch.home.presenter
+package com.menulog.search.home.presenter
 
-import com.burakeregar.githubsearch.api.Endpoints
-import com.burakeregar.githubsearch.home.model.RestaurantList
-import com.burakeregar.githubsearch.home.model.RestaurantsItem
+import com.menulog.search.api.Endpoints
+import com.menulog.search.model.RestaurantList
+import com.menulog.search.model.RestaurantsItem
+import com.menulog.search.presenter.RestaurantSearchPresenter
+import com.menulog.search.presenter.RestaurantSearchView
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify

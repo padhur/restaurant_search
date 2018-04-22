@@ -1,4 +1,4 @@
-package com.burakeregar.githubsearch.utils
+package com.menulog.search.utils
 
 import junit.framework.Assert.fail
 

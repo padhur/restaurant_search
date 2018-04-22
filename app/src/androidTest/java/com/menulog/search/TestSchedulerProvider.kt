@@ -1,4 +1,4 @@
-package com.burakeregar.githubsearch
+package com.menulog.search
 
 import com.base.util.SchedulerProvider
 import io.reactivex.Scheduler

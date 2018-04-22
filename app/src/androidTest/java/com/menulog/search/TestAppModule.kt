@@ -1,4 +1,4 @@
-package com.burakeregar.githubsearch
+package com.menulog.search
 
 /**
  * Created by padmanabanramasamy on 22/4/18.

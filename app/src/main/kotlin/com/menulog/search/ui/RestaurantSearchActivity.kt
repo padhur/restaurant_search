@@ -1,4 +1,4 @@
-package com.burakeregar.githubsearch.home
+package com.menulog.search.ui
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -14,27 +14,23 @@ import android.support.v4.app.ActivityCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.base.BaseActivity
-import com.burakeregar.githubsearch.R
-//import com.burakeregar.githubsearch.home.di.RestaurantSearchActivityModule
-import com.burakeregar.githubsearch.home.presenter.RestaurantSearchPresenter
-import com.burakeregar.githubsearch.home.presenter.RestaurantSearchView
-import com.burakeregar.githubsearch.home.viewholder.RestaurantSearchViewHolder
-import com.burakeregar.easiestgenericrecycleradapter.base.GenericAdapterBuilder
-import com.burakeregar.easiestgenericrecycleradapter.base.GenericRecyclerAdapter
-import com.burakeregar.githubsearch.home.model.*
 import com.mancj.materialsearchbar.MaterialSearchBar
 import kotlinx.android.synthetic.main.restaurant_activity.*
 import org.greenrobot.eventbus.Subscribe
 import org.jetbrains.anko.toast
 import javax.inject.Inject
 import android.view.inputmethod.InputMethodManager
-import com.base.RestaurantSearchApp
-import com.burakeregar.githubsearch.BuildConfig
-import com.burakeregar.githubsearch.home.di.DaggerRestaurantSearchActivityComponent
-import com.burakeregar.githubsearch.home.di.RestaurantSearchActivityModule
-//import com.burakeregar.githubsearch.home.di.DaggerRestaurantSearchActivityComponent
+import com.burakeregar.easiestgenericrecycleradapter.base.GenericAdapterBuilder
+import com.burakeregar.easiestgenericrecycleradapter.base.GenericRecyclerAdapter
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
+import com.menulog.search.BuildConfig
+import com.menulog.search.R
+import com.menulog.search.di.DaggerRestaurantSearchActivityComponent
+import com.menulog.search.di.RestaurantSearchActivityModule
+import com.menulog.search.model.RestaurantsItem
+import com.menulog.search.presenter.RestaurantSearchPresenter
+import com.menulog.search.presenter.RestaurantSearchView
 import java.io.IOException
 import java.util.*
 
@@ -95,11 +91,14 @@ class RestaurantSearchActivity : BaseActivity(), RestaurantSearchView,
     }
 
     override fun onActivityInject() {
+        /*DaggerRestaurantSearchActivityComponent.builder().appComponent(getAppcomponent())
+                .restaurantSearchActivityModule(RestaurantSearchActivityModule())
+                .build()
+                .inject(this)*/
         DaggerRestaurantSearchActivityComponent.builder().appComponent(getAppcomponent())
                 .restaurantSearchActivityModule(RestaurantSearchActivityModule())
                 .build()
                 .inject(this)
-        /*(application as RestaurantSearchApp).component().inject(this)*/
 
         presenter.attachView(this)
     }
