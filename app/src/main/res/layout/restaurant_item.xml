@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/restaurant_parent_layout">
+
+    <ImageView
+        android:id="@+id/img_restaurant_logo"
+        android:layout_width="@dimen/restaurant_logo_size"
+        android:layout_height="@dimen/restaurant_logo_size"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/empty_container_bg"/>
+
+    <TextView
+        android:id="@+id/tv_restaurant_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_restaurant_logo"
+        android:layout_marginStart="@dimen/margin_19"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:layout_toEndOf="@+id/img_restaurant_logo"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:background="@drawable/empty_container_bg"/>
+
+    <RatingBar
+        android:id="@+id/restaurant_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_restaurant_name"
+        android:layout_below="@+id/tv_restaurant_name"
+        android:layout_marginTop="@dimen/margin_8"
+        android:numStars="6"
+        android:stepSize="0.1"
+        android:rating="0"
+        style="@style/customRatingBar"
+        android:background="@drawable/empty_container_bg"/>
+
+    <TextView
+        android:id="@+id/tv_restaurant_cuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/restaurant_rating"
+        android:layout_below="@+id/restaurant_rating"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:background="@drawable/empty_container_bg"/>
+    <View
+        android:id="@+id/separator_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1"
+        android:layout_alignLeft="@id/img_restaurant_logo"
+        android:layout_alignStart="@id/img_restaurant_logo"
+        android:layout_below="@+id/tv_restaurant_cuisine"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/colorDivider" />
+
+    <TextView
+        android:id="@+id/tv_restaurant_totalratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/restaurant_rating"
+        android:layout_marginStart="@dimen/margin_13"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:layout_toEndOf="@+id/restaurant_rating"
+        android:background="@drawable/empty_container_bg"/>
+</RelativeLayout>

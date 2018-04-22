@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Restaurant Search</string>
+    <string name="restaurantsearch_hint">Search Restaurant Online</string>
+    <string name="searchbar_text_holder">Search Restaurant Online</string>
+    <string name="error_msg">Something went wrong</string>
+    <string name="no_restaurants_found">No Restaurants found at the postcode</string>
+    <string name="restaurant_name">Restaurant Name: </string>
+    <string name="search_restaurants">Search Restaurants by Postcode </string>
+    <string name="no_location_detected">
+        No location detected. Make sure location is enabled on the device.
+    </string>
+    <string name="permission_denied_explanation">
+        Permission was denied, please use know your postcode for search.
+    </string>
+    <string name="permission_rationale">
+        Location permission is needed for core functionality
+    </string>
+    <string name="settings">Settings</string>
+    <string name="default_postcode">se19</string>
+
+</resources>
